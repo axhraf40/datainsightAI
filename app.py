@@ -600,7 +600,8 @@ def render_chat() -> None:
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             if message["content"] and str(message["content"]).strip():
-                st.markdown(message["content"])
+                # Escape "$" so amounts like $1,200 aren't rendered as LaTeX math
+                st.markdown(str(message["content"]).replace("$", "\\$"))
             if message.get("display_df") is not None and not message["display_df"].empty:
                 st.dataframe(message["display_df"], use_container_width=True, hide_index=True)
             chart_bytes = message.get("chart_bytes")

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#60A5FA" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#334155" stroke-width="0.6" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="320" rx="18" fill="url(#bg)"/>
+  <rect x="760" y="0" width="520" height="320" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- chart motif -->
+  <g transform="translate(790,60)">
+    <rect x="0"   y="150" width="34" height="50"  rx="5" fill="#1D4ED8" opacity="0.55"/>
+    <rect x="52"  y="128" width="34" height="72"  rx="5" fill="#1D4ED8" opacity="0.6"/>
+    <rect x="104" y="138" width="34" height="62"  rx="5" fill="#1D4ED8" opacity="0.65"/>
+    <rect x="156" y="104" width="34" height="96"  rx="5" fill="#2563EB" opacity="0.7"/>
+    <rect x="208" y="86"  width="34" height="114" rx="5" fill="#2563EB" opacity="0.75"/>
+    <rect x="260" y="96"  width="34" height="104" rx="5" fill="#2563EB" opacity="0.8"/>
+    <rect x="312" y="60"  width="34" height="140" rx="5" fill="#3B82F6" opacity="0.85"/>
+    <rect x="364" y="30"  width="34" height="170" rx="5" fill="#3B82F6" opacity="0.9"/>
+    <path d="M17 140 L69 116 L121 124 L173 92 L225 72 L277 82 L329 44 L381 12 L381 200 L17 200 Z" fill="url(#area)"/>
+    <path d="M17 140 L69 116 L121 124 L173 92 L225 72 L277 82 L329 44 L381 12" fill="none" stroke="url(#line)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#E0F2FE"><circle cx="17" cy="140" r="5"/><circle cx="69" cy="116" r="5"/><circle cx="121" cy="124" r="5"/><circle cx="173" cy="92" r="5"/><circle cx="225" cy="72" r="5"/><circle cx="277" cy="82" r="5"/><circle cx="329" cy="44" r="5"/><circle cx="381" cy="12" r="6"/></g>
+    <!-- chat bubble -->
+    <g transform="translate(-40,-30)">
+      <rect width="190" height="44" rx="14" fill="#F8FAFC"/>
+      <path d="M24 44 L18 58 L40 44 Z" fill="#F8FAFC"/>
+      <text x="18" y="28" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" fill="#0F172A">Top 5 categories?</text>
+    </g>
+  </g>
+
+  <!-- logo + text -->
+  <g transform="translate(70,88)">
+    <rect width="64" height="64" rx="14" fill="#F8FAFC"/>
+    <path d="M37 10 L20 36 H31 L27 54 L45 27 H34 Z" fill="#0F172A"/>
+  </g>
+  <text x="152" y="140" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="54" font-weight="700" fill="#F8FAFC">DataInsight AI</text>
+  <text x="72" y="200" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="24" fill="#CBD5E1">Chat with your data — answers, charts and PDF reports</text>
+  <text x="72" y="236" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#64748B">Llama 3 · RAG · pandas · Streamlit · FastAPI · React</text>
+</svg>
