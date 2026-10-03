@@ -1,0 +1,219 @@
+{
+  "domain": "ecommerce",
+  "semantic_types": [
+    {
+      "id": "order_id",
+      "label": "Identifiant commande",
+      "patterns": ["order", "commande", "invoice", "facture", "transaction", "order_id", "orderid", "invoice_no"],
+      "role": "identifier",
+      "questions": []
+    },
+    {
+      "id": "customer",
+      "label": "Client",
+      "patterns": ["customer", "client", "user", "buyer", "acheteur", "customerid", "customer_id", "email"],
+      "role": "dimension",
+      "questions": [
+        "Quels sont les 10 clients avec le plus de commandes ?",
+        "Combien de clients uniques dans le dataset ?"
+      ]
+    },
+    {
+      "id": "product",
+      "label": "Produit",
+      "patterns": ["product", "produit", "item", "sku", "stockcode", "article", "description"],
+      "role": "dimension",
+      "questions": [
+        "Quels sont les 10 produits les plus vendus ?",
+        "Quel produit génère le plus de revenus ?"
+      ]
+    },
+    {
+      "id": "category",
+      "label": "Catégorie",
+      "patterns": ["category", "categorie", "catégorie", "type", "department", "département", "segment", "class"],
+      "role": "dimension",
+      "questions": [
+        "Quel est le total des ventes par catégorie ?",
+        "Crée un graphique en barres des ventes par catégorie"
+      ]
+    },
+    {
+      "id": "region",
+      "label": "Région / Géographie",
+      "patterns": ["region", "région", "state", "country", "pays", "city", "ville", "zip", "postal", "location"],
+      "role": "dimension",
+      "questions": [
+        "Quelle région achète le plus de produits ?",
+        "Crée un graphique des ventes par région"
+      ]
+    },
+    {
+      "id": "gender",
+      "label": "Sexe / Genre",
+      "patterns": ["sex", "sexe", "gender", "genre"],
+      "role": "dimension",
+      "questions": [
+        "Quelle est la répartition des ventes par sexe ?",
+        "Crée un camembert de la répartition par genre"
+      ]
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "patterns": ["date", "time", "timestamp", "created", "updated", "order_date", "jour", "month", "year"],
+      "role": "temporal",
+      "questions": [
+        "Quelle est l'évolution des ventes par mois ?",
+        "Crée un graphique linéaire des ventes dans le temps"
+      ]
+    },
+    {
+      "id": "amount",
+      "label": "Montant / Revenu",
+      "patterns": ["amount", "montant", "total", "revenue", "sales", "vente", "price", "prix", "unitprice"],
+      "role": "metric",
+      "questions": [
+        "Quel est le chiffre d'affaires total ?",
+        "Quel est le panier moyen ?"
+      ]
+    },
+    {
+      "id": "quantity",
+      "label": "Quantité",
+      "patterns": ["quantity", "quantité", "quantite", "qty", "units", "volume"],
+      "role": "metric",
+      "questions": [
+        "Combien d'unités vendues au total ?",
+        "Quelle catégorie a la plus grande quantité vendue ?"
+      ]
+    },
+    {
+      "id": "shipping",
+      "label": "Livraison",
+      "patterns": ["shipping", "livraison", "delivery", "ship", "carrier", "transport", "freight", "fulfillment"],
+      "role": "dimension",
+      "questions": [
+        "Quel type de livraison est le plus utilisé ?",
+        "Quel est le délai moyen de livraison par mode ?"
+      ]
+    },
+    {
+      "id": "payment",
+      "label": "Paiement",
+      "patterns": ["payment", "paiement", "pay", "card", "carte", "method", "mode_paiement"],
+      "role": "dimension",
+      "questions": [
+        "Quelle méthode de paiement est la plus populaire ?",
+        "Quel est le montant moyen par mode de paiement ?"
+      ]
+    },
+    {
+      "id": "status",
+      "label": "Statut",
+      "patterns": ["status", "statut", "state_order", "order_status", "fulfillment_status"],
+      "role": "dimension",
+      "questions": [
+        "Combien de commandes par statut ?",
+        "Quel est le taux de commandes annulées ?"
+      ]
+    },
+    {
+      "id": "discount",
+      "label": "Remise / Promotion",
+      "patterns": ["discount", "remise", "promo", "coupon", "reduction", "réduction"],
+      "role": "metric",
+      "questions": [
+        "Quel est l'impact des remises sur le chiffre d'affaires ?",
+        "Quelle promotion est la plus utilisée ?"
+      ]
+    },
+    {
+      "id": "age",
+      "label": "Âge",
+      "patterns": ["age", "âge", "birth", "naissance", "dob"],
+      "role": "dimension",
+      "questions": [
+        "Quelle tranche d'âge achète le plus ?",
+        "Quel est l'âge moyen des clients ?"
+      ]
+    },
+    {
+      "id": "rating",
+      "label": "Note / Avis",
+      "patterns": ["rating", "note", "review", "avis", "score", "stars", "étoile"],
+      "role": "metric",
+      "questions": [
+        "Quelle est la note moyenne des produits ?",
+        "Quels produits ont les meilleures notes ?"
+      ]
+    },
+    {
+      "id": "profit",
+      "label": "Profit / Bénéfice",
+      "patterns": ["profit", "margin", "marge", "gain", "benefice", "bénéfice", "earnings", "markup"],
+      "role": "metric",
+      "questions": [
+        "Quel est le profit/bénéfice total ?",
+        "Calcule le profit moyen par commande",
+        "Quelle catégorie a généré le plus de bénéfice ?"
+      ]
+    },
+    {
+      "id": "return",
+      "label": "Retour / Remboursement",
+      "patterns": ["return", "retour", "refund", "remboursement", "returned", "retourné", "cancel", "annule", "annulé", "cancellation", "reject"],
+      "role": "dimension",
+      "questions": [
+        "Combien de commandes ont été retournées ou annulées ?",
+        "Quel est le taux de retour global ?",
+        "Quels produits ont le plus fort taux de retour ?"
+      ]
+    },
+    {
+      "id": "sub_category",
+      "label": "Sous-catégorie",
+      "patterns": ["sub-category", "sub_category", "subcategory", "sous-categorie", "sous-catégorie", "sous_categorie", "subclass", "sub_class"],
+      "role": "dimension",
+      "questions": [
+        "Quel est le total des ventes par sous-catégorie ?",
+        "Quelle est la répartition des produits par sous-catégorie ?"
+      ]
+    },
+    {
+      "id": "cost",
+      "label": "Coût d'achat",
+      "patterns": ["cost", "cogs", "buying_price", "prix_achat", "coût", "cout", "purchase_price"],
+      "role": "metric",
+      "questions": [
+        "Quel est le coût total d'achat des produits ?",
+        "Quel est le ratio coût/ventes ?"
+      ]
+    },
+    {
+      "id": "trend_prediction",
+      "label": "Prédiction et Tendance",
+      "patterns": ["predict", "prédiction", "tendance", "forecast", "futur", "prévoir", "prochain mois", "projection", "prochains mois"],
+      "role": "metric",
+      "questions": [
+        "Prédis les ventes pour les 3 prochains mois",
+        "Quelle est la tendance future de notre chiffre d'affaires ?"
+      ]
+    },
+    {
+      "id": "business_recommendation",
+      "label": "Recommandations stratégiques",
+      "patterns": ["recommandation", "conseil", "action", "améliorer", "optimiser", "insight", "que faire"],
+      "role": "dimension",
+      "questions": [
+        "Quelles actions me conseilles-tu ?",
+        "Donne-moi des recommandations basées sur les taux de retour"
+      ]
+    }
+  ],
+  "generic_questions": [
+    "Combien de lignes contient le dataset ?",
+    "Y a-t-il des valeurs manquantes ? Combien par colonne ?",
+    "Génère un rapport PDF sur ce dataset"
+  ]
+}

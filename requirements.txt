@@ -1,0 +1,14 @@
+streamlit
+pandas
+matplotlib
+seaborn
+groq
+reportlab
+openpyxl
+python-dotenv
+bcrypt
+scikit-learn
+fastapi
+uvicorn[standard]
+python-multipart
+extra-streamlit-components

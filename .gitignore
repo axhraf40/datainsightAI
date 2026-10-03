@@ -1,0 +1,40 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local data (SQLite DB, uploads, generated charts/PDFs)
+data/
+uploads/
+exports/
+cache/
+*.db
+*.sqlite
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# PandasAI
+.pandasai/
+pandasai.log
+
+# Node
+node_modules/
+dist/
+.output/
+.vinxi/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Lovable
+.lovable/
